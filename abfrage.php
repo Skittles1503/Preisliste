@@ -1,3 +1,7 @@
+<html>
+<div id="top">
+<a href="eingabe.php." id="newproduct">Neues Produkt</a>
+</div>
 <link href="abfrage.css" rel="stylesheet">
 
 <div id="formular">

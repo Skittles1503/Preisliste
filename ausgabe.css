@@ -18,3 +18,17 @@
 #new:hover {
     background-color: #708080;
 }
+#nothing {
+    font-size:30px;
+    color:red;
+}
+#top {
+    size: 100%;
+    color: white;
+    background-color:grey;
+    height:40px;
+}
+#newproduct{
+    text-decoration: none;
+    color:white;
+}

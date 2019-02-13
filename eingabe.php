@@ -1,3 +1,6 @@
+<div id="top">
+<a href="eingabe.php." id="newproduct">Neues Produkt</a>
+</div>
 <div id="formular">
 <link href="eingabe.css" rel="stylesheet">
 <form action="speichern.php" method="post">

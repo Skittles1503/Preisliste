@@ -1,3 +1,6 @@
+<div id="top">
+<a href="eingabe.php." id="newproduct">Neues Produkt</a>
+</div>
 <div id="formular">
 <link href="ausgabe.css" rel="stylesheet">
 
@@ -11,12 +14,22 @@ $eingabe = $_POST['eingabe'];
 
 $sql = "SELECT * FROM preise WHERE bezeichnung = ?";
 $sth = $pdo->prepare($sql);
-$sth->execute(array($eingabe));
-$back = $sth->fetch();
+if($sth->execute(array($eingabe))) {
+    $rows = $sth->fetchAll(PDO::FETCH_ASSOC);
+    if(count($rows)>0) {
+        foreach($rows as $back) {
+            echo '<div id="ausgabe">';
+            echo $back['bezeichnung']." kostet: ".$back['preis']."€"."<br />";
+            echo '</div>';
+        }
+    } else {
+        echo '<div id="nothing">';
+        echo "Kein Eintrag gefunden. Bitte Produkt eintragen!";
+        echo '</div>';
+    }
+}
 
-echo '<div id="ausgabe">';
-echo $back['bezeichnung']." kostet: ".$back['preis']."€"."<br />";
-echo '</div>';
+
 
 
 
