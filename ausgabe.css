@@ -1,0 +1,20 @@
+#ausgabe {
+    font-size:30px;
+    padding-bottom: 10px;
+}
+#formular {
+    text-align: center;
+    display: block;
+}
+#new {
+    height: 50px;
+    font-size: 20px;
+    width: 200px;
+    border:2px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: dodgerBlue;
+}
+#new:hover {
+    background-color: #708080;
+}

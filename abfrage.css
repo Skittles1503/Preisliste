@@ -1,0 +1,50 @@
+#success {
+    display: none;
+}
+#success:target {
+    display: block;
+    background: green;
+    color:white;
+}
+#formular{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 50px;
+}
+#eingabefeld {
+    size: 20px;
+    color: blue;
+    height: 40px;
+    width: 400px;
+    margin-top: 10px;
+    font-size: 35px;
+}
+#newarticle{
+    height: 50px;
+    font-size: 20px;
+    width: 250px;
+    border:2px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: dodgerBlue;
+    margin-top: 10px;
+}
+#newarticle:hover{
+    background-color: blue;
+}
+#sub{
+    height: 50px;
+    font-size: 20px;
+    width: 200px;
+    border:2px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: dodgerBlue;
+    display: inline;
+}
+#sub:hover{
+    background-color: green;
+}
+
+
