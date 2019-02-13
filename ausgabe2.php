@@ -2,7 +2,7 @@
 <link href="ausgabe.css" rel="stylesheet">
 
 <?php
-$pdo = new PDO('mysql:host=localhost;dbname=liste', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=liste', 'Moritz', 'xxxaA1234Aa...');
  
 
 

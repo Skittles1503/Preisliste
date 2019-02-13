@@ -1,5 +1,5 @@
 <?php
-$pdo = new PDO('mysql:host=localhost;dbname=liste', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=liste', 'Moritz', 'xxxaA1234Aa...');
 
 $bezeichnung = $_POST['bezeichnung'];
 $preis = $_POST['preis'];

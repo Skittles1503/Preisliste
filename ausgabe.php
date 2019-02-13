@@ -1,6 +1,6 @@
 <?php
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=liste', 'root', '');
+    $pdo = new PDO('mysql:host=localhost;dbname=liste', 'Moritz', 'xxxaA1234Aa...');
  
 } catch (PDOExpetion    $th) {
     echo $th->error_log;
