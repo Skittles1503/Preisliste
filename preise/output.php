@@ -1,8 +1,8 @@
 <div id="top">
-<a href="eingabe.php." id="newproduct">Neues Produkt</a>
+<a href="searchform.php" id="newproduct">Neues Produkt</a>
 </div>
 <div id="formular">
-<link href="ausgabe.css" rel="stylesheet">
+<link href="../style/ausgabe.css" rel="stylesheet">
 
 <?php
 $pdo = new PDO('mysql:host=localhost;dbname=liste', 'Moritzroot', 'SzC7qsR9b3dz4LVZ');
@@ -42,6 +42,6 @@ echo $back['bezeichnung']." ".$back['preis']."<br />";
 */
 ?>
 
-<form action="abfrage.php">
+<form action="searchform.php">
 <button type="submit" id="new">Neue Abfrage</button>
 </div>

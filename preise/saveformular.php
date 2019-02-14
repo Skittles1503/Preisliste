@@ -1,8 +1,8 @@
 <div id="top">
-<a href="eingabe.php." id="newproduct">Neues Produkt</a>
+<a href="save.php." id="newproduct">Neues Produkt</a>
 </div>
 <div id="formular">
-<link href="eingabe.css" rel="stylesheet">
+<link href="../style/eingabe.css" rel="stylesheet">
 <form action="speichern.php" method="post">
 Artikelname:<br>
 <input type="text" id="artikelname" maxlength="250" name="bezeichnung"><br><br>

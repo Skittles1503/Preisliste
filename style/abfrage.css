@@ -28,6 +28,7 @@
     border-radius: 4px;
     box-sizing: border-box;
     border-color: dodgerBlue;
+    margin-top: 10px;
 }
 #newarticle:hover{
     background-color: blue;
@@ -40,7 +41,16 @@
     border-radius: 4px;
     box-sizing: border-box;
     border-color: dodgerBlue;
+    display: inline;
 }
 #sub:hover{
     background-color: green;
 }
+#top {
+    size: 100%;
+    color: white;
+    background-color:grey;
+    height:40px;
+    text-decoration: none;
+}
+
