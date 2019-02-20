@@ -13,6 +13,13 @@ if($sth->execute(array($session))) {
             header("Location: searchform.php");
             echo '</div>';
         }
+    $select =  $pdo->prepare("SELECT * from login WHERE id = ?");
+    $select->execute(array($back['userid']));
+        $rows = $select->fetchALL(PDO::FETCH_ASSOC);
+        echo " Hallo: ".$rows[0]['vorname']."  ".$rows[0]['nachname']."<br />";
+     
+
+            
     } else {
         echo '<div id="nothing">';
         echo "Sie sind nicht eingelogt";

@@ -9,3 +9,11 @@
     border-color: dodgerBlue;
     margin-top: 10px;
 }
+
+#div1 {
+    size: 100%;
+    color: white;
+    background-color:grey;
+    height:40px;
+    text-decoration: none;
+}

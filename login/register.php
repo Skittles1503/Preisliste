@@ -1,7 +1,7 @@
 <?php
 
 if(isset($_POST['email']) && isset($_POST['passwort']) && isset($_POST['vorname']) && isset($_POST['nachname'])) { 
-$pdo = new PDO('mysql:host=localhost;dbname=liste', 'Moritzroot', 'SzC7qsR9b3dz4LVZ');
+$pdo = new PDO('mysql:host=localhost;dbname=liste;charset=utf8mb4', 'Moritzroot', 'SzC7qsR9b3dz4LVZ');
 
 $mail = $_POST['email'];
 $vorname= $_POST['vorname'];

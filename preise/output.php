@@ -42,6 +42,6 @@ echo $back['bezeichnung']." ".$back['preis']."<br />";
 */
 ?>
 
-<form action="searchform.php">
+<form action=".php">
 <button type="submit" id="new">Neue Abfrage</button>
 </div>

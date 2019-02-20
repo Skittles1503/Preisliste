@@ -1,9 +1,9 @@
 <div id="top">
-<a href="save.php." id="newproduct">Neues Produkt</a>
+<a href="save.php" id="newproduct">Neues Produkt</a>
 </div>
 <div id="formular">
 <link href="../style/eingabe.css" rel="stylesheet">
-<form action="speichern.php" method="post">
+<form action="save.php" method="post">
 Artikelname:<br>
 <input type="text" id="artikelname" maxlength="250" name="bezeichnung"><br><br>
 Preis:<br>

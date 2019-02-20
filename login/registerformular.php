@@ -9,7 +9,35 @@
     background: green;
     color:white;
 }
+#div1 {
+    size: 100%;
+    color: white;
+    background-color:grey;
+    height:60px;
+    margin-bottom:20px;
+}
+#gotologin {
+    color:white;
+    text-decoration:none;
+    size:10px;
+    border-style: solid;
+    border-width: medium;
+    margin-top:20px;
+}
+#gologin{
+    margin-left:15px;
+    padding-top: 20px;
+}
+#gotologin:hover{
+    color:orange;
+}
 </style>
+<div id="div1">
+<div id="gologin">
+<a href="loginformular.php" id="gotologin">Zum Loginbereich</a>
+</div>
+</div>
+
 <div id="success">Benutzer eingefügt</div>
 <form action="register.php" method="post">
 E-Mail: <input type="email" name="email" /><br />
