@@ -1,8 +1,20 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optionales Theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <link href="../style/ausgabe.css" rel="stylesheet">
+</head>
 <div id="top">
 <a href="searchform.php" id="newproduct">Neues Produkt</a>
 </div>
 <div id="formular">
-<link href="../style/ausgabe.css" rel="stylesheet">
+
 
 <?php
 $pdo = new PDO('mysql:host=localhost;dbname=liste', 'Moritzroot', 'SzC7qsR9b3dz4LVZ');
@@ -42,6 +54,5 @@ echo $back['bezeichnung']." ".$back['preis']."<br />";
 */
 ?>
 
-<form action=".php">
-<button type="submit" id="new">Neue Abfrage</button>
+<button type="button" class="btn btn-primary" onclick="location.replace('searchform.php')">Neue Abfrage</button>
 </div>

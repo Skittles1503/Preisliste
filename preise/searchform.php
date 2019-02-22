@@ -3,11 +3,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="../style/login.css" rel="stylesheet">
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-<!-- Optionales Theme -->
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+        <link href="../style/searchform.css" rel="stylesheet">
 </head>
 <?php
 session_start();
@@ -32,29 +34,13 @@ if($sth->execute(array($session))) {
     }}
 ?>
 
-<style>
-    #top {
-    }
-    #salat{
-        float: right;
-        margin-top: -20px;
-    }
-    #logoutbutton{
-        float:right;
-        margin-top:18px;
-        margin-right:20px;
-    }
-    #newproductbutton {
-        padding-top: 12px;
-    }
-    </style>
 <div id="top">
     <div id="div1">
         <div id="logoutbutton">
             <button type="button" class="btn btn-primary" onclick="location.replace('sessiondestroy.php')">Logout</button>
         </div>
         <div id="newproductbutton">
-            <a class="btn btn-primary" href="#" role="button">enter new product</a>
+            <a class="btn btn-primary" href="saveform.php" role="button">enter new product</a>
         </div>
 </div>
 
@@ -63,10 +49,10 @@ if($sth->execute(array($session))) {
     <div id="success">Produkt gespeichert</div>
         <form action="output.php" method="post">
             Gesuchter Artikel:<br>
-            <input type="search" list="Produkte" autocomplete="off" id="eingabefeld" size="40" maxlength="250" name="eingabe"><br><br>
-            <input type="submit" id="sub" value="Abschicken">
+            <input type="text" class="form-control" id="eingabefeld" list="Produkte" autocomplete="off" name="eingabe"><br><br>
+            <button type="submit" class="btn btn-primary" id="searchbutton">suchen</button>
         </form>
-<form action="saveformular.php">
+<form action="saveform.php">
 
 </form>
 </div>

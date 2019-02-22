@@ -1,55 +1,54 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-#success {
-    display:none;
-}
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-#success:target {
-    display: block;
-    background: green;
-    color:white;
-}
-#div1 {
-    size: 100%;
-    color: white;
-    background-color:grey;
-    height:60px;
-    margin-bottom:20px;
-}
-#gotologin {
-    color:white;
-    text-decoration:none;
-    size:10px;
-    border-style: solid;
-    border-width: medium;
-    margin-top:20px;
-}
-#gologin{
-    margin-left:15px;
-    padding-top: 20px;
-}
-#gotologin:hover{
-    color:orange;
-}
-</style>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+        <link href="../style/registerform.css" rel="stylesheet">
+</head>
+<script>
+
+</script>
+<div class="container">
 <div id="div1">
-<div id="gologin">
-<a href="loginformular.php" id="gotologin">Zum Loginbereich</a>
+    <div id="gologin">
+        <a href="loginformular.php" id="gotologin">Zum Loginbereich</a>
+    </div>
 </div>
-</div>
-
 <div id="success">Benutzer eingefügt</div>
-<form action="register.php" method="post">
-E-Mail: <input type="email" name="email" /><br />
-Passwort: <input type="password" name="passwort" /><br />
-Vorname: <input type="text" name="vorname" /><br />
-Nachname: <input type="text" name="nachname" /><br />
-<input type="Submit" value="Registrieren" />
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <form action="register.php" method="post" id="login">
+                <input type="email" class="form-control" id="emailinput" aria-describedby="emailHelp" placeholder="Enter email" name="email" minlength="5" required>
+                <input type="password" class="form-control" id="passwordinput" name="passwort" placeholder="Enter password" minlength="5" required>
+                <input type="text" class="form-control" id="firstnameinput" name="vorname" placeholder="Enter first given name" minlength="3" required>
+                <input type="text" class="form-control" id="surnameinput" name="nachname" placeholder="Enter surname" minlength="2" required>
+                
+    <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-2">
+            <button class="btn btn-primary" type="submit">registrieren</button>
+            <button class="btn btn-primary" id="loginarea" onclick="location.replace('loginformular.php')">zum Loginbereich</button>
+        </div>
+        <div class="col-md-5"></div>
+            
+            </form>
+        
+        </div>
+    </div>
+ 
 
 
-<form action="login.php" method="get"><input type="submit" name="senden" value="zum Loginbereich" /></form>
 
+</div>
+</div>
 
-
-
+<script>
+</script>
 </form>

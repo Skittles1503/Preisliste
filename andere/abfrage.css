@@ -12,14 +12,13 @@
     padding-top: 10px;
     font-size: 50px;
 }
-#eingabefeld{
-    size: 100% !important;
-    color: blue !important;
-    height: 5% !important;
-    width: 35% !important;
-    margin-top: 10px !important;
-    font-size: 35px !important;
-    margin: 0 auto;
+#eingabefeld {
+    size: 20px;
+    color: blue;
+    height: 40px;
+    width: 400px;
+    margin-top: 10px;
+    font-size: 35px;
 }
 #newarticle{
     height: 50px;
@@ -51,37 +50,7 @@
     size: 100%;
     color: white;
     background-color:grey;
-    height:60px;
+    height:40px;
     text-decoration: none;
 }
 
-#logoutbutton{
-    float:right;
-    margin-top:18px;
-    margin-right:20px;
-}
-#newproductbutton {
-    padding-top: 12px;
-}
-
-#salat{
-    float: right !important;
-    margin-top: -20px;
-}
-#logoutbutton{
-    float:right;
-    margin-top:18px;
-    margin-right:20px;
-}
-#newproductbutton {
-    padding-top: 12px;
-}
-
-#searchbutton {
-    margin-top: -80px;
-    color: orange;
-}
-
-#searchbutton:hover {
-    color: green;
-}
